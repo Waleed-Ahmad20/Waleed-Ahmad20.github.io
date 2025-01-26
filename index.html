@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Programming Lab</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1 id="heading">Web Engineering Lab 1 - First Webpage </h1>
-    <p>This webpage demonstrates my current understanding of HTML. Below are a few hobbies of mine: </p>
-    <ul>
-        <li>Playing Football</li>
-        <li>Going to the gym</li>
-        <li>Gardening</li>
-      </ul>
-      <img src="https://wallpapercave.com/wp/wp4844571.jpg" alt="batball" width="600" height="300"><br><br>
-      <a href="https://www.nasa.gov/">Link to a website I like!</a>
-    
+    <h1>Welcome to My Demo Project</h1>
 </body>
+<header id="Header">
+    <nav id="Navbar">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href=#DigitalLibrary>Digital Library</a></li>
+            <li><a href="#Movies">Movies</a></li>
+            <li><a href="#Section2">Contact</a></li>
+            <li><a href="#Section1">About</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="Section1">About Me</section>
+    <p>My name is Waleed Ahmad. I am making this webpage for my Web Engineering Course.</p>
+    <p style="font-weight: bold">My Skills:</p>
+    <ul>
+        <li>Logic Building</li>
+        <li>Code Analysis</li>
+        <li>Software Testing</li>
+    </ul>
+    <section id="Movies">Movies</section>
+    <p>Here is a list of movies that I enjoy watching:</p>
+    <ul>
+        <li>
+            <a href="#"
+                onclick="document.getElementById('InterstellarTrailer').style.display='block'; return false;">Interstellar</a>
+            <iframe id="InterstellarTrailer" width="560" height="315"
+                src="https://www.youtube.com/embed/zSWdZVtXT7E?si=BRfhPE5ojQ0892ai" frameborder="0"
+                style="display:none;" allowfullscreen" allowfullscreen></iframe>
+        </li>
+        <li>
+            <a href="#" onclick="document.getElementById('InfinityTrailer').style.display='block'; return false;">The
+                Man Who Knew Infinity</a>
+            <iframe id="InfinityTrailer" width="560" height="315"
+                src="https://www.youtube.com/embed/oXGm9Vlfx4w?si=CyrdBBuo5piUkPtM" frameborder="0"
+                style="display:none;" allowfullscreen></iframe>
+        </li>
+        <li>
+            <a href="#"
+                onclick="document.getElementById('OrbitalTrailer').style.display='block'; return false;">Orbital</a>
+            <iframe id="OrbitalTrailer" src="https://www.youtube.com/embed/ngO6Mnmzc8A?si=k-Sw4jfp4YbIwOIQ" width="560"
+                height="315" frameborder="0" style="display:none;" allowfullscreen></iframe>
+        </li>
+    </ul>
+    <hr>
+    <section id="DigitalLibrary">Digital Library</section>
+    <p>Here is a list of songs that I enjoy listening to:</p>
+    <ul>
+        <li>
+            <a href="#" onclick="document.getElementById('DeathNotePlayer').style.display='block'; return false;">Death
+                Note</a>
+            <iframe id="DeathNotePlayer" src="https://mp3anime.net/embed/272" scrolling="no" width="400" height="120"
+                frameborder="0" style="display:none;"></iframe>
+        </li>
+        <li>
+            <a href="#"
+                onclick="document.getElementById('ErasedPlayer').style.display='block'; return false;">Erased</a>
+            <iframe id="ErasedPlayer" src="https://mp3anime.net/embed/379" scrolling="no" width="400" height="120"
+                frameborder="0" style="display:none;"></iframe>
+        </li>
+        <li>
+            <a href="#" onclick="document.getElementById('NeonGenesisPlayer').style.display='block'; return false;">Neon
+                Genesis Evangelion</a>
+            <iframe id="NeonGenesisPlayer" src="https://mp3anime.net/embed/401" scrolling="no" width="400" height="120"
+                frameborder="0" style="display:none;"></iframe>
+        </li>
+    </ul>
+    <hr>
+    <section id="Section2"></section>
+    <p style="font-weight: bold;">Say something about me.</p>
+    <form action="">
+        <input type="text" name="Name" id="Name" placeholder="Enter your name" required><br>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email" required><br>
+        <input type="tel" name="Phone" id="Phone" placeholder="Enter your phone" required><br>
+        <input type="text" name="Message" id="Message" placeholder="Enter your message" required><br>
+        <input type="submit">
+    </form>
+</main><br>
+<footer id="Footer">2025 Demo Project. All rights reserved by Waleed Ahmad.</footer>
+
 </html>
